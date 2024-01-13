@@ -23,8 +23,8 @@
 .Hello_body_right_text {
     color: #a5c15a;
     display: flex;
-    justify-content: start;
-    align-items: end;
+    justify-content: flex-start;
+    align-items: flex-end;
     font-size: 10rem;
     height: 150%;
 }
@@ -40,7 +40,7 @@
 .Hello_body_right_subtext > div {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     height: 100%;
     padding-top: 20px;
 }

@@ -38,7 +38,7 @@ export default function Hello() {
                     </div>
                     <div className="Hello_body_right_subtext">
                         <div>
-                            // <span>I HELP YOU TO</span>
+                            {"//"} <span>I HELP YOU TO</span>
                         </div>
                     </div>
                     <div className="Hello_body_right_type">

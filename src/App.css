@@ -1,134 +1,38 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  text-decoration: none;
-
-}
-
 .App {
-  background-color: #282c34;
-  font-family: "SF Pro Display", serif;
-
+  text-align: center;
 }
 
-.mainHeader{
-  background-color: #282c34;
-  box-shadow:  0 1px 10px 0 #1f2226;
-  display: flex;
-  align-items: center;
-  color: #606060;
-  font-size: 17px;
-  height: 2rem;
-  width: 100%;
-  gap: 15px;
-  padding-left: 15px;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.mainNav{
-  /*margin-top: 5px;*/
-  height: 2em;
-  justify-content: center;
-  align-items: center;
-}
-
-.mainNav_ul{
-
-  display: flex;
-  list-style-type: none;
-  flex-direction: row;
-  justify-content: space-between;
-  /*width: 65em;*/
-  gap: 5px;
-}
-
-.line1{
-  height: 5px;
-}
-.line2{
-  height: 5px;
-}
-.line3{
-  height: 5px;
-}
-.line4{
-  height: 5px;
-}
-.line5{
-  height: 5px;
-}
-
-.active{
-  background-color:red;
-}
-
-.mainNav_ul>li>a{
-  background-color: #313642;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #d7d7d7;
-  transition: all 0.2s ease-in-out;
-}
-
-.mainNav_ul>li>a:hover{
-  color: #ecb314;
-  font-size: 17px;
-}
-
-.mainNav_ul>div{
-  margin-top: 5px;
-  background-color: #313642;
-  display: flex;
-  width: 280em;
-  align-items: center;
-  justify-content: center;
-  color: #d7d7d7;
-}
-
-.mainHeader>div{
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-}
-
-.mainHeader_closeBtn{
-  background-color: red;
-  border: none;
-  color: #606060;
-  font-size: 17px;
-  cursor: pointer;
-  outline: none;
-}
-
-.mainHeader_minBtn{
-  background-color: yellow;
-  border: none;
-  color: #606060;
-  font-size: 17px;
-  cursor: pointer;
-  outline: none;
-}
-
-.mainHeader_maxBtn{
-  background-color: green;
-  border: none;
-  color: #606060;
-  font-size: 17px;
-  cursor: pointer;
-  outline: none;
-}
-
-
-/* Media Query for Responsive Design */
-@media screen and (max-width: 768px) {
-  .mainNav_ul {
-    flex-direction: column;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
+}
 
-  .mainNav_ul>li>a {
-    font-size: 14px;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

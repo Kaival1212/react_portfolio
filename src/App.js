@@ -6,9 +6,15 @@ import Skills from "./comps/Skills/Skills";
 import Projects from "./comps/Projects/Projects";
 import Contact from "./comps/Contact/Contact";
 import Footer from "./comps/Footer/Fotter";
+import {useEffect} from "react";
 
 
 function App() {
+
+    useEffect(() => {
+        document.title = "Portfolio | Kaival Patel";
+    }, []);
+
     return (
         <div className="App">
             <Router>

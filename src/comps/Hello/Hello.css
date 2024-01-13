@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.Hello_body {
+    display: flex;
+}
+
+.Hello_body_left {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hello_body_right {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inconsolata", monospace;
+    font-weight: 700;
+    margin-left: 15%;
+}
+
+.Hello_body_right_text {
+    color: #a5c15a;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    font-size: 10rem;
+    height: 150%;
+}
+
+.Hello_body_right_subtext {
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    font-size: 3.5rem;
+    color: #ffffff;
+}
+
+.Hello_body_right_subtext > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.Hello_body_right_subtext > div > span {
+    letter-spacing: 0.4em;
+}
+
+.Hello_body_right_type {
+    font-size: 3rem;
+    height: 140%;
+    color: #8f5d99;
+}
+
+.Hello_body_left_numbers {
+    color: #606060;
+    margin-right: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+    padding-bottom: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+}
+
+.Hello_body_left_lines {
+    width: 20%;
+    display: flex;
+    padding-top: 15%;
+    padding-bottom: 30%;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Hello_body_left_lines > div {
+    width: 0.7rem;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+.Hello_body_left_lines_line0 {
+    background-color: #606060;
+    height: 90%;
+
+}
+
+.Hello_body_left_lines_line1 {
+    background-color: #606060;
+    height: 70%;
+}
+
+.Hello_body_left_lines_line2 {
+    background-color: #606060;
+    height: 50%;
+}
+
+.Hello_body_left_text {
+    /*background-color: #231801;*/
+    color: #d7d7d7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50%;
+    padding-bottom: 70%;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.tag {
+    color: #4CAF50;
+}
+
+/* Green color for HTML tags */
+.attribute {
+    color: #e53935;
+}
+
+/* Red color for HTML attributes */
+.string {
+    color: #6200ea;
+}
+
+/* Purple color for strings */
+.keyword {
+    color: #1565c0;
+}
+
+/* Blue color for keywords */
+.comment {
+    color: #757575;
+}
+
+/* Gray color for comments */
+

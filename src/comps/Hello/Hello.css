@@ -1,116 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-.Hello_body {
+.Hello {
     display: flex;
+    flex-direction: column;
 }
 
-.Hello_body_left {
-    width: 70%;
+.Hello_main {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 81vh;
+    margin-top: 10px;
 }
 
-.Hello_body_right {
+.Hello_main_left {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70vw;
+}
+
+.Hello_main_right {
     display: flex;
     flex-direction: column;
     font-family: "Inconsolata", monospace;
     font-weight: 700;
-    margin-left: 15%;
+
 }
 
-.Hello_body_right_text {
-    color: #a5c15a;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    font-size: 10rem;
-    height: 150%;
-}
-
-.Hello_body_right_subtext {
-    height: 40%;
-    display: flex;
-    flex-direction: row;
-    font-size: 3.5rem;
-    color: #ffffff;
-}
-
-.Hello_body_right_subtext > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 100%;
-    padding-top: 20px;
-}
-
-.Hello_body_right_subtext > div > span {
-    letter-spacing: 0.4em;
-}
-
-.Hello_body_right_type {
-    font-size: 3rem;
-    height: 140%;
-    color: #8f5d99;
-}
-
-.Hello_body_left_numbers {
+.Hello_main_left_numbers {
     color: #606060;
-    margin-right: 10px;
-    width: 40%;
+    width: 12vw;
+    text-align: end;
     display: flex;
     flex-direction: column;
-    padding-top: 15%;
-    padding-bottom: 30%;
-    justify-content: center;
-    align-items: center;
-    text-align: end;
+    justify-content: space-around;
 }
 
-.Hello_body_left_lines {
-    width: 20%;
+.Hello_main_left_lines {
+    width: 10vw;
     display: flex;
-    padding-top: 15%;
-    padding-bottom: 30%;
     align-items: center;
-    gap: 1rem;
+    gap: 1vw;
+    margin-left: 20px;
 }
 
-.Hello_body_left_lines > div {
-    width: 0.7rem;
+.Hello_main_left_lines > div {
+    background-color: #606060;
+    width: 10px;
     margin: 0 5px;
     border-radius: 10px;
 }
 
-.Hello_body_left_lines_line0 {
-    background-color: #606060;
-    height: 90%;
-
+.Hello_main_left_lines > div:nth-child(1) {
+    height: 60vh;
 }
 
-.Hello_body_left_lines_line1 {
-    background-color: #606060;
-    height: 70%;
+.Hello_main_left_lines > div:nth-child(2) {
+    height: 45vh;
 }
 
-.Hello_body_left_lines_line2 {
-    background-color: #606060;
-    height: 50%;
+.Hello_main_left_lines > div:nth-child(3) {
+    height: 35vh;
 }
 
-.Hello_body_left_text {
-    /*background-color: #231801;*/
-    color: #d7d7d7;
+
+.Hello_main_left_text {
+    font-family: "Source Code Pro", monospace;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50%;
-    padding-bottom: 70%;
-    font-family: "Source Code Pro", monospace;
-    font-size: 1rem;
-    margin-left: 10px;
+}
+
+.Hello_main_right_text {
+    color: #a5c15a;
+    display: flex;
+    font-size: 10rem;
+    height: auto;
+    justify-content: flex-start;
+    padding-top: 10vh;
+}
+
+.Hello_main_right_subtext {
+
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.Hello_main_right_subtext > span {
+    letter-spacing: 0.4em;
+}
+
+.Hello_main_right_typing {
+    font-size: 2.5rem;
+    max-height: 10vh;
+    color: #8f5d99;
 }
 
 .tag {
@@ -137,5 +124,55 @@
     color: #757575;
 }
 
-/* Gray color for comments */
+@media screen and (max-width: 768px) {
+    .Hello_main {
+        flex-direction: column;
+        /*margin-top: 20vh;*/
+    }
 
+    .Hello_main_left_lines {
+        display: none;
+    }
+
+    .Hello_main_left_text {
+        margin-left: 50px;
+    }
+
+    .Hello_main_left {
+
+        width: 100vw;
+    }
+
+    .Hello_main_right {
+        height: auto; /* Allow it to take its natural height */
+        padding-bottom: 5vh;
+    }
+
+    .Hello_main_right_text {
+        font-size: 5rem;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .Hello_main_right_subtext {
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+        color: #ffffff;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .Hello_main_right_subtext > span {
+        letter-spacing: 0;
+    }
+
+    .Hello_main_right_typing {
+        font-size: 1rem;
+        color: #8f5d99;
+        text-align: center;
+
+    }
+
+}

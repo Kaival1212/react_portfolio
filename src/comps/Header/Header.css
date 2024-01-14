@@ -1,6 +1,6 @@
-.mainHeader{
+.mainHeader {
     background-color: #282c34;
-    box-shadow:  0 1px 10px 0 #1f2226;
+    box-shadow: 0 1px 10px 0 #1f2226;
     display: flex;
     align-items: center;
     color: #606060;
@@ -11,18 +11,18 @@
     padding-left: 15px;
 }
 
-.Header{
+.Header {
     height: auto;
 }
 
-.mainNav{
+.mainNav {
     /*margin-top: 5px;*/
     height: 2em;
     justify-content: center;
     align-items: center;
 }
 
-.mainNav_ul{
+.mainNav_ul {
 
     display: flex;
     list-style-type: none;
@@ -32,41 +32,46 @@
     gap: 5px;
 }
 
-.line1{
-    height: 5px;
-}
-.line2{
-    height: 5px;
-}
-.line3{
-    height: 5px;
-}
-.line4{
-    height: 5px;
-}
-.line5{
+.line1 {
     height: 5px;
 }
 
-.active{
-    background-color:red;
+.line2 {
+    height: 5px;
 }
 
-.mainNav_ul>li>a{
+.line3 {
+    height: 5px;
+}
+
+.line4 {
+    height: 5px;
+}
+
+.line5 {
+    height: 5px;
+}
+
+.active {
+    background-color: red;
+}
+
+.mainNav_ul > li > a {
     background-color: #313642;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #d7d7d7;
+    height: 4vh;
     transition: all 0.2s ease-in-out;
 }
 
-.mainNav_ul>li>a:hover{
+.mainNav_ul > li > a:hover {
     color: #ecb314;
     font-size: 17px;
 }
 
-.mainNav_ul>div{
+.mainNav_ul > div {
     margin-top: 5px;
     background-color: #313642;
     display: flex;
@@ -74,15 +79,16 @@
     align-items: center;
     justify-content: center;
     color: #d7d7d7;
+    /*height: vh;*/
 }
 
-.mainHeader>div{
+.mainHeader > div {
     width: 15px;
     height: 15px;
     border-radius: 50%;
 }
 
-.mainHeader_closeBtn{
+.mainHeader_closeBtn {
     background-color: red;
     border: none;
     color: #606060;
@@ -91,7 +97,7 @@
     outline: none;
 }
 
-.mainHeader_minBtn{
+.mainHeader_minBtn {
     background-color: yellow;
     border: none;
     color: #606060;
@@ -100,7 +106,7 @@
     outline: none;
 }
 
-.mainHeader_maxBtn{
+.mainHeader_maxBtn {
     background-color: green;
     border: none;
     color: #606060;
@@ -116,7 +122,11 @@
         flex-direction: column;
     }
 
-    .mainNav_ul>li>a {
+    .Header {
+        padding-bottom: 20vh;
+    }
+
+    .mainNav_ul > li > a {
         font-size: 14px;
     }
 }

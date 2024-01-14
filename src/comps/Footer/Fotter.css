@@ -1,5 +1,27 @@
-.Footer{
+/* Fotter.css */
+
+.Footer {
     background-color: #313642;
-    color: #fff;
-    height: 6%;
+    height: 7vh;
+}
+
+.Footer_main {
+    color: #d7d7d7 !important;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.Footer_main a {
+    color: #d7d7d7 !important; /* Set your desired color and use !important */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Add margin between icons */
+}
+
+.Footer_main a:hover {
+    color: #8d8d8d !important; /* Change color on hover if desired */
+}
+
+.Footer_main svg {
+    font-size: 2em; /* You can adjust the size accordingly */
 }

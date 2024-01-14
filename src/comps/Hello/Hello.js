@@ -7,20 +7,20 @@ import {TypeAnimation} from "react-type-animation";
 export default function Hello() {
     return (
         <div className="Hello">
-            <Header pageno={1}/>
-            <div className="Hello_body">
-                <div className="Hello_body_left">
-                    <div className="Hello_body_left_numbers">
-                        {Array(20).fill(0).map((_, i) => {
-                            return <div className="Hello_body_left_numbers_number">{i + 1}</div>
+            <Header></Header>
+            <div className="Hello_main">
+                <div className="Hello_main_left">
+                    <div className="Hello_main_left_numbers">
+                        {Array(20).fill(1).map((_, i) => {
+                            return <div key={i + 1} className={`Hello_main_left_numbers_${i}`}>{i + 1}</div>
                         })}
                     </div>
-                    <div className="Hello_body_left_lines">
-                        {Array(3).fill(0).map((_, i) => {
-                            return <div className={`Hello_body_left_lines_line${i}`}></div>
+                    <div className="Hello_main_left_lines">
+                        {Array(3).fill(1).map((_, i) => {
+                            return <div key={i}></div>
                         })}
                     </div>
-                    <div className="Hello_body_left_text">
+                    <div className="Hello_main_left_text">
                         <span className="tag">{"<hello>"}</span> <br/>
                         <span className="attribute">{"  Hello, My name is Kaival(){"}</span><br/>
                         <span className="keyword">{"    I am a full-Stack Developer"}</span>
@@ -31,27 +31,32 @@ export default function Hello() {
                         <span className="tag">{"</hello>"}</span>
                     </div>
                 </div>
-                <div className="Hello_body_right">
-                    <div className="Hello_body_right_text">
+
+                <div className="Hello_main_right">
+                    <div className="Hello_main_right_text">
                         {"<KAIVAL"}<br/>
                         {"PATEL/>"}
                     </div>
-                    <div className="Hello_body_right_subtext">
-                        <div>
-                            {"//"} <span>I HELP YOU TO</span>
-                        </div>
+                    <div className="Hello_main_right_subtext">
+                        {"//"} <span>I CAN HELP YOU WITH</span>
+
                     </div>
-                    <div className="Hello_body_right_type">
+                    <div className="Hello_main_right_typing">
                         <TypeAnimation
                             sequence={[
-                                // Same substring at the start will only be typed once, initially
-                                'TEMP T 1',
+                                'Full-Stack',
                                 1000,
-                                'TEMP TE 2',
+                                'iOS Development',
                                 1000,
-                                'TEMP TEX 3',
+                                'Tensorflow Models',
                                 1000,
-                                'TEMP TEXT 4',
+                                'Machine Learning',
+                                1000,
+                                'ReactJS',
+                                1000,
+                                'Problem Solving',
+                                1000,
+                                'Communication',
                                 1000,
                             ]}
                             speed={10}
@@ -60,6 +65,7 @@ export default function Hello() {
                         />
                     </div>
                 </div>
+
             </div>
         </div>
     );

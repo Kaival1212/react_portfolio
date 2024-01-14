@@ -1,5 +1,5 @@
 import './App.css';
-import {HashRouter as Router, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Hello from "./comps/Hello/Hello";
 import About from "./comps/About/About";
 import Skills from "./comps/Skills/Skills";
@@ -18,7 +18,7 @@ function App() {
     return (
         <div className="App">
             <div className="top">
-                <Router hashType="slash">
+                <Router>
                     <Routes>
                         <Route path="/" element={<Hello/>}></Route>
                         <Route path="/about" element={<About/>}></Route>

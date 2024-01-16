@@ -1,5 +1,134 @@
-.Hello{
-    color: red;  height: 100%;
-    width: 100%;
-    background-color: #1f2226;
+
+.About_main {
+    display: flex;
+    flex-direction: row;
+    min-height: 85.5vh;
+}
+
+
+.About_main_numbers {
+    color: #606060;
+    width: 12vw;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 7vh;
+    margin-bottom: 15vh;
+}
+
+.About_main_text {
+    color: #d7d7d7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+    margin-top: 7vh;
+    margin-bottom: 15vh;
+}
+
+
+.About_main_text_first_line {
+    padding-left: 50px;
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    color: #f0b65a;
+    background: linear-gradient(to right, rgba(164, 2, 0, 0.7), rgba(63, 33, 40, 0.33));
+}
+
+.About_main_text_first_line svg {
+    color: red;
+    margin: 0; /* Add some margin to separate the icon from the text */
+    height: 20px;
+    width: 20px;
+}
+
+
+.About_main_text_last_line {
+    padding-left: 50px;
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    color: #f0b65a;
+    background: linear-gradient(to right, rgba(164, 2, 0, 0.7), rgba(63, 33, 40, 0.33));
+}
+
+.About_main_text_last_line svg {
+    color: red;
+    margin: 0; /* Add some margin to separate the icon from the text */
+    height: 20px;
+    width: 20px;
+}
+
+.About_main_text_main {
+    padding-left: 50px;
+
+}
+
+.About_main_image {
+    height: 500px;
+    margin-top: 7vh;
+    margin-bottom: 15vh;
+    padding-left: 10vw;
+}
+
+.About_main_image img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.variable {
+    color: #8f5d99;
+}
+
+.tag {
+    color: #4CAF50;
+}
+
+/* Green color for HTML tags */
+.attribute {
+    color: #e53935;
+}
+
+/* Red color for HTML attributes */
+.string {
+    color: #6200ea;
+}
+
+/* Purple color for strings */
+.keyword {
+    color: #1565c0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .About_main {
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .About_main_numbers {
+        display: none;
+    }
+
+    .About_main_image {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .About_main_image img {
+        height: 400px;
+        width: 400px;
+
+    }
+
+    .About_main_text {
+        margin-top: 3vh;
+        margin-bottom: 0;
+    }
+
 }

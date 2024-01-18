@@ -28,8 +28,8 @@
     list-style-type: none;
     flex-direction: row;
     justify-content: space-between;
-    /*width: 65em;*/
     gap: 5px;
+    height: 5vh;
 }
 
 .line1 {
@@ -78,8 +78,8 @@
     width: 280em;
     align-items: center;
     justify-content: center;
-    color: #d7d7d7;
-    /*height: vh;*/
+    height: 4vh;
+
 }
 
 .mainHeader > div {

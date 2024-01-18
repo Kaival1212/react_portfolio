@@ -6,7 +6,7 @@ export default function Header(props) {
     const handleLinkClick = (lineNumber) => {
         setActiveLine(lineNumber);
     };
-    return(
+    return (
         <div className="Header">
             <header className="mainHeader">
                 <div className="mainHeader_closeBtn"></div>
@@ -40,12 +40,12 @@ export default function Header(props) {
                             $projects
                         </a>
                     </li>
-                    <li>
-                        <div className={`line5 ${activeLine === 5 ? 'active' : ''}`}></div>
-                        <a href="/contacts" className="mainNav_ul_contacts" onClick={() => handleLinkClick(5)}>
-                            $contacts
-                        </a>
-                    </li>
+                    {/*<li>*/}
+                    {/*    <div className={`line5 ${activeLine === 5 ? 'active' : ''}`}></div>*/}
+                    {/*    <a href="/contacts" className="mainNav_ul_contacts" onClick={() => handleLinkClick(5)}>*/}
+                    {/*        $contacts*/}
+                    {/*    </a>*/}
+                    {/*</li>*/}
                     <div></div>
                 </ul>
             </nav>

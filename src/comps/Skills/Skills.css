@@ -1,5 +1,119 @@
-.Hello{
-    color: red;  height: 100%;
-    width: 100%;
-    background-color: #1f2226;
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.Skills_main {
+    font-family: "Source Code Pro", monospace;
+    margin-top: 10px;
+    min-height: 84vh;
+    display: flex;
+    color: #606060;
+}
+
+.Skills_main_left {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4vh;
+    text-align: center;
+    align-items: center;
+    background-color: #313642;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Skills_main_right {
+    width: 70vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #d7d7d7;
+}
+
+.Skills_main_left_title {
+    display: flex;
+    width: auto;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #d7d7d7;
+}
+
+.Skills_main_left_title svg {
+    color: #606060;
+    width: 25px;
+    height: 25px;
+}
+
+.Skills_main_left_content {
+    margin-top: 10px;
+    width: 10rem;
+    margin-left: 6em;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.Skills_main_left_content > div {
+    display: flex;
+    justify-content: start;
+    gap: 2px;
+    color: #d7d7d7;
+}
+
+.Skills_main_right_list_title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Skills_main_left_content > div svg {
+    color: #606060;
+    width: 15px;
+    height: 15px;
+}
+
+.Skills_main_right_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: auto;
+}
+
+
+.Skills_main_right_progress {
+    height: 1.5em;
+    width: 20em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Skills_main_right_progress > div {
+    height: 100%;
+    background-color: #333139;
+    width: 1.6em;
+}
+
+.active_skills {
+    background-color: #f9bd60 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .Skills_main {
+        flex-direction: column;
+    }
+
+    .Skills_main_left {
+        width: 100vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .Skills_main_right_list {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
 }

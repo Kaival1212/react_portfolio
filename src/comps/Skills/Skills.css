@@ -56,7 +56,7 @@
 
 .Skills_main_left_content > div {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 2px;
     color: #d7d7d7;
 }

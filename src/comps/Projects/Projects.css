@@ -1,5 +1,161 @@
-.Hello{
-    color: red;  height: 100%;
-    width: 100%;
-    background-color: #1f2226;
+.Projects_main_title {
+    display: flex;
+    margin-top: 10px;
+    color: #d7d7d7;
+    min-height: 84vh;
+    font-family: "Source Code Pro", monospace;
+
 }
+
+.Projects_main_left {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    padding-top: 50px;
+    padding-left: 70px;
+}
+
+.Projects_main_left_image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Projects_main_left_title {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.Projects_main_left_subtitle {
+    font-size: 20px;
+    cursor: pointer;
+    color: #969696;
+
+}
+
+.Projects_main_left_button {
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 4vh;
+}
+
+.Projects_main_left_bio {
+    display: flex;
+    margin-left: 20px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.Projects_main_left_followers {
+    display: flex;
+    width: 100px;
+}
+
+.Projects_main_left_followers_number {
+    display: flex;
+    width: 10px;
+}
+
+.Projects_main_left_following {
+    display: flex;
+    width: 10px;
+}
+
+.Projects_main_left_followers > svg {
+    width: 50px;
+    height: auto;
+    color: #d7d7d7;
+    margin-bottom: 20px;
+}
+
+.Projects_main_right {
+    width: 60vw;
+    color: #d7d7d7;
+
+
+}
+
+.Projects_main_right_repositorie {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 50px;
+    padding-left: 50px;
+    justify-content: space-between;
+}
+
+.Projects_main_right_repositorie_title {
+    width: auto;
+}
+
+.Projects_main_right_repositorie_title_name > a {
+    color: #3081f7;
+
+}
+
+.Projects_main_right_repositorie_title_name :hover {
+    text-decoration: underline;
+}
+
+
+.Projects_main_right_repositorie_title_name {
+    font-size: 20px;
+
+}
+
+.Projects_main_right_repositorie_coding_lang {
+    font-size: 20px;
+    color: #969696;
+}
+
+.Projects_main_right_repositorie_star {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    color: #d7d7d7;
+}
+
+.Projects_main_right_repositorie_star_button {
+    display: flex;
+    background-color: #21262c;
+    color: #d7d7d7;
+    border: 0.5px solid #969696;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.Projects_main_right_repositorie_star_button > svg {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.Projects_main_right_line {
+    width: 100%;
+    height: 1px;
+    background-color: #d7d7d7;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .Projects_main_title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Projects_main_left {
+        width: 80vw;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .Projects_main_right {
+        width: 80vw;
+    }
+}
+

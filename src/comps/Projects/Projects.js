@@ -76,6 +76,7 @@ export default function Projects() {
 
                 <div className="Projects_main_right">
                     {/*<div className="Projects_main_right_indi">*/}
+                    <Repos name='HolyFits' lang='Laravel+Vite' url="http://holyfits.kaival.co.uk/"/>
                     <Repos name="FitnessGPT" lang="React.js" url="https://fitness-gptt.web.app/"/>
                     <Repos name="FitnessX-APP" lang="Swift" url="https://github.com/Kaival1212/FitnessX-APP"/>
                     <Repos name="MS-app" lang="Swift" url="https://github.com/Kaival1212/MS-app"/>

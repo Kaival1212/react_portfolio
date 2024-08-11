@@ -1,11 +1,11 @@
 // import Header from "../Header/header";
 import Header from "../Header/header";
 import "./Skills.css";
-import {FaCaretDown, FaFile, FaFileCode} from "react-icons/fa";
+import { FaCaretDown, FaFile, FaFileCode } from "react-icons/fa";
 
 export default function Skills() {
 
-    const ProgessBar = ({Number}) => {
+    const ProgessBar = ({ Number }) => {
 
         return (
             <div className="Skills_main_right_progress">
@@ -22,17 +22,18 @@ export default function Skills() {
 
     return (
         <div className="Skills">
-            <Header pageno={3}/>
+            <Header pageno={3} />
             <div className="Skills_main">
                 <div className="Skills_main_left">
 
                     <div className="Skills_main_left_title">
-                        <FaCaretDown/>
-                        <FaFile/>
+                        <FaCaretDown />
+                        <FaFile />
                         Hard_skills
                     </div>
 
                     <div className="Skills_main_left_content">
+                        <div><FaFileCode></FaFileCode> Laravel</div>
                         <div><FaFileCode></FaFileCode> React</div>
                         <div><FaFileCode></FaFileCode> CSS</div>
                         <div><FaFileCode></FaFileCode> JavaScript</div>
@@ -49,73 +50,77 @@ export default function Skills() {
                 </div>
                 <div className="Skills_main_right">
                     <div className="Skills_main_right_list">
+                    <div className="Skills_main_right_list_title">
+                            Laravel
+                            <ProgessBar Number={8} />
+                        </div>
                         <div className="Skills_main_right_list_title">
                             React
-                            <ProgessBar Number={11}/>
+                            <ProgessBar Number={11} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             CSS
-                            <ProgessBar Number={9}/>
+                            <ProgessBar Number={9} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             JavaScript
-                            <ProgessBar Number={10}/>
+                            <ProgessBar Number={10} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             Node.js
-                            <ProgessBar Number={11}/>
+                            <ProgessBar Number={11} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             Express
-                            <ProgessBar Number={11}/>
+                            <ProgessBar Number={11} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             MongoDB
-                            <ProgessBar Number={8}/>
+                            <ProgessBar Number={8} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             MySQL
-                            <ProgessBar Number={8}/>
+                            <ProgessBar Number={8} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             Python
-                            <ProgessBar Number={11}/>
+                            <ProgessBar Number={11} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             Java
-                            <ProgessBar Number={7}/>
+                            <ProgessBar Number={7} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             Tensorflow
-                            <ProgessBar Number={9}/>
+                            <ProgessBar Number={9} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             Computer Vision
-                            <ProgessBar Number={8}/>
+                            <ProgessBar Number={8} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             IOS development
-                            <ProgessBar Number={7}/>
+                            <ProgessBar Number={7} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             Communication
-                            <ProgessBar Number={9}/>
+                            <ProgessBar Number={9} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             Teamwork
-                            <ProgessBar Number={8}/>
+                            <ProgessBar Number={8} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             Leadership
-                            <ProgessBar Number={9}/>
+                            <ProgessBar Number={9} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             Problem solving
-                            <ProgessBar Number={11}/>
+                            <ProgessBar Number={11} />
                         </div>
                         <div className="Skills_main_right_list_title">
                             Time management
-                            <ProgessBar Number={6}/>
+                            <ProgessBar Number={6} />
                         </div>
 
                     </div>

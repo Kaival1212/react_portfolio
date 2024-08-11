@@ -1,7 +1,7 @@
 // import Header from "../Header/header";
 import "./Hello.css";
 import Header from "../Header/header";
-import {TypeAnimation} from "react-type-animation";
+import { TypeAnimation } from "react-type-animation";
 
 
 export default function Hello() {
@@ -21,20 +21,20 @@ export default function Hello() {
                         })}
                     </div>
                     <div className="Hello_main_left_text">
-                        <span className="tag">{"<hello>"}</span> <br/>
-                        <span className="attribute">{"  Hello, My name is Kaival(){"}</span><br/>
+                        <span className="tag">{"<hello>"}</span> <br />
+                        <span className="attribute">{"  Hello, My name is Kaival(){"}</span><br />
                         <span className="keyword">{"    I am a full-Stack Developer"}</span>
                         <span className="keyword">{"    I have experience in building projects"}</span>
                         <span
-                            className="keyword">{"    using React.js, Node.js, MongoDB, Tensorflow, and more"}</span><br/>
-                        <span className="attribute">{"  }"}</span> <br/>
+                            className="keyword">{"    using React.js, Node.js, MongoDB, Tensorflow, and more"}</span><br />
+                        <span className="attribute">{"  }"}</span> <br />
                         <span className="tag">{"</hello>"}</span>
                     </div>
                 </div>
 
                 <div className="Hello_main_right">
                     <div className="Hello_main_right_text">
-                        {"<KAIVAL"}<br/>
+                        {"<KAIVAL"}<br />
                         {"PATEL/>"}
                     </div>
                     <div className="Hello_main_right_subtext">
@@ -44,6 +44,8 @@ export default function Hello() {
                     <div className="Hello_main_right_typing">
                         <TypeAnimation
                             sequence={[
+                                "Laravel+inertia.js",
+                                1000,
                                 'Full-Stack',
                                 1000,
                                 'iOS Development',
@@ -53,14 +55,10 @@ export default function Hello() {
                                 'Machine Learning',
                                 1000,
                                 'ReactJS',
-                                1000,
-                                'Problem Solving',
-                                1000,
-                                'Communication',
-                                1000,
+                                1000
                             ]}
                             speed={10}
-                            style={{fontSize: '2em'}}
+                            style={{ fontSize: '2em' }}
                             repeat={Infinity}
                         />
                     </div>
